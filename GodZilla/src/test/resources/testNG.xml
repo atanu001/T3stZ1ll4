@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GodZ Automation Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <!-- Allure TestNG listener -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Cucumber Tests">
+        <classes>
+            <!-- Your Test Runner class full package path -->
+            <class name="godZ.qa.runners.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
